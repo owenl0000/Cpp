@@ -123,6 +123,46 @@ void question5() { //will act as a main for question5
     cout << "Reversed word: " << word << endl;
 
 }
+
+namespace myMath{
+    int matrix1[3][3] = {
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9}
+    };
+    int matrix2[3][3] = {
+        {10, 11, 12},
+        {13, 14, 15},
+        {16, 17, 18}
+    };
+
+    int add(int value1, int value2) {
+        int value = value1 + value2;
+        return value;
+    }
+    int sub(int value2, int value1) {
+        int value = value2 - value1;
+        return value;
+    }
+}
+using namespace myMath;
+void question6() { // will act as a main for question6
+    int value1 = 0;
+    int value2 = 0;
+    int x1,x2,y1,y2;
+    cout << "Enter x value(0-2) for matrix1: ";
+    cin >> x1;
+    cout << "Enter y value(0-2) for matrix1: ";
+    cin >> y1;
+    cout << "Enter x value(0-2) for matrix2: ";
+    cin >> x2;
+    cout << "Enter y value(0-2) for matrix1: ";
+    cin >> y2;
+    value1 = matrix1[x1][y1];
+    value2 = matrix2[x2][y2];
+    cout << value1 << " plus " << value2 << " is " << add(value1, value2) << endl;
+    cout << value2 << " minus " << value1 << " is " << sub(value2, value1) << endl;
+}
 //For Print
 int main() {
     cout << "__________________________________________________" << endl << endl;
@@ -145,11 +185,11 @@ int main() {
     cout << "__________________________________________________" << endl << endl;
     cout << "Question 5:" << endl;
     cout << "__________________________________________________" << endl << endl;
-    question5();
+    //question5();
     cout << "__________________________________________________" << endl << endl;
     cout << "Question 6:" << endl;
     cout << "__________________________________________________" << endl << endl;
-   // question6();
+    question6();
     cout << "__________________________________________________" << endl << endl;
     return 0;
 }

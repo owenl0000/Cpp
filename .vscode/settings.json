@@ -1,6 +1,12 @@
 {
     "files.associations": {
         "iostream": "cpp",
-        "ostream": "cpp"
-    }
+        "ostream": "cpp",
+        "type_traits": "cpp",
+        "iosfwd": "cpp",
+        "fstream": "cpp",
+        "string": "cpp",
+        "iomanip": "cpp"
+    },
+    "C_Cpp.default.compilerPath": "d:\\CISC 3142\\Dev-Cpp\\MinGW64\\bin\\g++.exe"
 }
